@@ -7,9 +7,7 @@ Code in this repo has been heavily borrowed from [this](https://github.com/affin
 of the pix2pix tensorflow. But the linked code is not easy to use as I have experienced it first hand while 
 working on a related project.
 
-This repo is an attempt to make the pix2pix implementation easily approachable for training and testing. The provided code 
-also trains faster by removing some of the unnecessary operations. As such, there is some difference between how to define 
-input and output in the linked repo and this one.
+This repo is an attempt to make the pix2pix implementation easily approachable for training and testing.
 
 A guide on how to use this code for image to image translation is provided.
 
@@ -45,18 +43,6 @@ e.g
 	python train.py --input_dir <training_images_folder>
 
 For more control over the training, refer to `config.py` which contains all the configurable settings to be used. You'll find comments there to help you out.
-
-As mentioned above, the code in this repo runs faster than [pix2pix-tensorflow](https://github.com/affinelayer/pix2pix-tensorflow). 
-
-The following examples are run on Tesla V100 DGXS GPU.
-
-##### Original Training
-
-![Old code](https://i.ibb.co/9WGySjc/old-code.png)
-
-##### Training using code in this repo
-
-![New code](https://i.ibb.co/wcVPh3k/new-code.png)
 
 #### 2. Generating samples
 
